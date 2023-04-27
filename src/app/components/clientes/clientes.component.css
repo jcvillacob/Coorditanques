@@ -1,0 +1,26 @@
+.app-container {
+    display: flex;
+    min-height: 100vh; /* Ajusta la altura al 100% de la ventana */
+}
+
+.main-content {
+    margin-left: 115px;
+    margin-right: 95px;
+    flex: 1;
+    /* Ocupa todo el espacio restante después del sidebar */
+    overflow-y: auto;
+    /* Permite el scroll solo en el contenido principal */
+    position: relative;
+    z-index: 0;
+    width: auto; /* Asegura que el contenedor ocupe todo el ancho de la ventana */
+    top: 45px;
+}
+
+/* Agrega estilos para pantallas aún más pequeñas */
+@media screen and (max-width: 480px) {
+    .main-content {
+        margin-left: 85px;
+        margin-right: 20px;
+    }
+
+}

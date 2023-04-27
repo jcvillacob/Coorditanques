@@ -1,0 +1,70 @@
+footer {
+    background-color: #f1eeee00;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    margin-top: 70px;
+}
+
+.social-icons {
+    display: inline-block;
+    margin-left: 80vw;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    color: #EE2C37;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.3);
+}
+
+.social-icon span {
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 10px;
+    background-color: #EE2C37;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.social-icon:hover span {
+    display: block;
+}
+
+.social-icon i {
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+    .social-icons {
+        margin-left: 75vw;
+    }
+
+    .social-icon i {
+        font-size: 1.85rem;
+    }
+}
+
+/* Agrega estilos para pantallas aún más pequeñas */
+@media screen and (max-width: 480px) {
+    .social-icons {
+        margin-left: 45vw;
+    }
+
+    .social-icon i {
+        font-size: 1.65rem;
+    }
+}

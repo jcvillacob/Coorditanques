@@ -1,0 +1,402 @@
+/* Estilos generales */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: bold;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Estilos de la página de inicio */
+
+.home-container {
+    width: 90%;
+    margin: 40px auto;
+}
+
+/* Estilos de la sección de héroe */
+
+.hero-section {
+    position: relative;
+    background-image: url('https://th.bing.com/th/id/OIG.n6NwLOrfm77jLOl3Lx5y?pid=ImgGn');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-section * {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    /* Ajusta el valor de la opacidad según tus preferencias */
+    z-index: 0;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 30px;
+    text-shadow: 0px 0px 20px rgba(24, 24, 24, 0.9);
+}
+
+.hero-section p {
+    font-size: 24px;
+    color: #fff;
+    line-height: 1.5;
+    margin-bottom: 50px;
+    text-shadow: 0px 0px 12px rgba(24, 24, 24, 0.9);
+}
+
+
+
+
+/* Estilos de los botones */
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #EE2C37;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #333;
+}
+
+/* Reglas CSS para hacer que la sección de héroe sea responsiva */
+
+@media screen and (max-width: 768px) {
+    .hero-section {
+        padding: 50px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .hero-section p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .btn-primary {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+
+/* Estilos de la sección de características */
+
+.features-section {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    /* Agrega envoltura para que los elementos se ajusten a la pantalla */
+}
+
+.feature-card {
+    flex-basis: 33.33%;
+    padding: 30px;
+    text-align: center;
+}
+
+.feature-card i {
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: #EE2C37;
+}
+
+.feature-card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.feature-card p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Agrega estilos para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .features-grid {
+        flex-wrap: wrap;
+    }
+
+    .feature-card {
+        flex-basis: 50%;
+    }
+
+    .feature-card i {
+        font-size: 50px;
+    }
+
+    .feature-card h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .feature-card p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Agrega estilos para pantallas aún más pequeñas */
+@media screen and (max-width: 480px) {
+    .feature-card {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+
+    .feature-card i {
+        font-size: 50px;
+    }
+
+    .feature-card h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .feature-card p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Estilos de la sección del equipo directivo */
+
+.team-section {
+    background-color: #ee2c361c;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    flex-basis: 100%;
+    max-width: 500px;
+    margin: 0 auto 50px auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.team-card img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    max-width: 150px;
+}
+
+.team-card h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    .team-grid {
+        flex-wrap: nowrap;
+    }
+
+    .team-card {
+        flex-basis: 33.33%;
+        margin: 0 30px 50px 30px;
+    }
+}
+
+
+
+/* Estilos de la sección de contacto */
+
+.contact-section {
+    padding-bottom: 35px;
+    text-align: center;
+    background-color: #ee2c361c;
+}
+
+.contact-section .card {
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 50px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url('https://th.bing.com/th/id/OIG.ed3kp_9Zii.V804KYwwi?pid=ImgGn');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-section i {
+    margin-right: 5px;
+}
+
+.contact-section .form-group {
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-section input,
+.contact-section textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 40px;
+}
+
+.contact-section textarea {
+    height: 200px;
+}
+
+.contact-section button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.contact-section button:hover {
+    background-color: #333;
+}
+
+.contact-section button i {
+    margin-right: 5px;
+}
+
+/* Estilos responsive de la sección de contacto */
+
+@media only screen and (max-width: 768px) {
+    .home-container {
+        width: 95%;
+        margin: auto;
+    }
+
+    .contact-section{
+        width: 100%;
+        padding: 0px;
+        padding-bottom: 20px;
+    }
+    
+    .contact-section .card {
+        padding: 30px;
+        width: 90%;
+        border-radius: 7px;
+    }
+
+    .contact-section h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .contact-section .form-group {
+        max-width: 100%;
+    }
+
+    .contact-section input,
+    .contact-section textarea {
+        margin-bottom: 20px;
+    }
+
+    .contact-section textarea {
+        height: 150px;
+    }
+
+    .contact-section button {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+}

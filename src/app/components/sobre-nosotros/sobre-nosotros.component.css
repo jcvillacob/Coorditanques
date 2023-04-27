@@ -1,0 +1,158 @@
+/* About Us */
+.about-us {
+    background-color: #f8f8f8;
+    padding: 80px 0;
+}
+
+.about-us .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+.about-us p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.about-us img {
+    max-width: 100%;
+}
+
+/* Experience */
+.experience {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.experience .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+.experience p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+#carrousel {
+    margin: 2rem 0 0;
+}
+
+#carrousel h3{
+    margin-top: 1rem;
+}
+
+.experience .owl-carousel .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience .rounded-circle {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.owl-carousel img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+/* Team */
+.team {
+    background-color: #f8f8f8;
+    padding: 80px 0;
+}
+
+.team .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+.team p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+/* Locations */
+.locations {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.locations .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+.locations h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.locations p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.locations iframe {
+    border: 0;
+}
+
+.embed-responsive-16by9 {
+    position: relative;
+    display: block;
+    height: 0;
+    padding-bottom: 56.25%;
+    /* Proporción 16:9 */
+    overflow: hidden;
+}
+
+.embed-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.locations img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.locations .embed-responsive {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .about-us .section-title,
+    .experience .section-title,
+    .team .section-title,
+    .locations .section-title {
+        font-size: 30px;
+    }
+
+    .about-us p,
+    .experience p,
+    .team p,
+    .locations p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+}

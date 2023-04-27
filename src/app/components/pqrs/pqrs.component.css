@@ -1,0 +1,10 @@
+.pqrs-container {
+    padding-bottom: 50px;
+    padding-top: 25px;
+    background: #e3ccd47e;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f0e4e500, #e3ccd000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f0e4e873, #e3cccf85);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
